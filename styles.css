@@ -1,0 +1,10 @@
+.container {
+    border: 5px solid red;
+    min-height: 150px;
+}
+.box {
+    width: 100px;
+    height: 100px;
+    border: 2px solid;
+}
+

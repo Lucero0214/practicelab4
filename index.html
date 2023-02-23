@@ -5,8 +5,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CreateElement</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <h1> Dynamically creates elements with javascript</h1>
+    <button>MakeBoxes</button>
+    <div class="container">
     
+    </div>
+
+        <!-- script is in body tage easier to check if the script loads -->
+    <script>
+        //creates shortcut reference to button
+        const button = document.querySelector('button');
+        //creates shortcut for making reference to container 
+        const container = document.querySelector('.container');
+    // statement make this thing happend 
+        button.addEventListener('click', (e) => {
+            // first statement you have to have a sentinal variable a value keeps track on how long it runs, i less than 100 is our condition statement, i++ means you keep adding on to it 
+            for ( let i=0; i < 100; i++) {
+
+            
+       //creating shortcut ref in creating a box virtually but it doesnt become reality until we append     
+          const newBox = document.createElement('DIV');  
+          newBox.classList.add('box');
+        //  append the new box it keeps adding new box as they click the button
+          container.append(newBox);
+            }
+        });
+
+
+    </script>
 </body>
 </html>
