@@ -1,40 +1,28 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" >
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CreateElement</title>
+    <title>Changing the DOM</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+<header>Changing the DOM</header>
+
 <body>
     <h1> Dynamically creates elements with javascript</h1>
-    <button>MakeBoxes</button>
-    <div class="container">
-    
-    </div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, quae! Unde ipsum nostrum, laudantium atque consequuntur voluptatibus vitae quidem aliquam, nisi impedit dolore culpa molestias labore, est perspiciatis. Sapiente, quam.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio cupiditate minus quas necessitatibus veritatis nemo consectetur inventore corporis iste labore. Rerum quo, quod non a error omnis doloremque nostrum ipsam.</p>
 
+    <button class="make-boxes" data-holder=".container">Make Boxes</button>
+
+    <section class="container">
+        <p>no boxes yet </p>
+    </section>
+<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt eligendi quo eveniet repudiandae illum illo ullam nostrum, fuga vel, animi voluptate repellat molestiae nulla placeat a quaerat quis est. Doloremque.</p>
         <!-- script is in body tage easier to check if the script loads -->
-    <script>
-        //creates shortcut reference to button
-        const button = document.querySelector('button');
-        //creates shortcut for making reference to container 
-        const container = document.querySelector('.container');
-    // statement make this thing happend 
-        button.addEventListener('click', (e) => {
-            // first statement you have to have a sentinal variable a value keeps track on how long it runs, i less than 100 is our condition statement, i++ means you keep adding on to it 
-            for ( let i=0; i < 100; i++) {
-
-            
-       //creating shortcut ref in creating a box virtually but it doesnt become reality until we append     
-          const newBox = document.createElement('DIV');  
-          newBox.classList.add('box');
-        //  append the new box it keeps adding new box as they click the button
-          container.append(newBox);
-            }
-        });
+    <script src="main.js"></script>
 
 
-    </script>
 </body>
 </html>
