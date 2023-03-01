@@ -23,11 +23,20 @@ body{
     text-align: center;
     color: #a37871;
     transition: all 0.5s;
+    justify-content: center;
 }
+.click {
+    border:5px solid #a37871;
+    width: 100px;
+    height: 100px;
+    margin:0 auto;
+    text-align: center;
+    cursor: pointer;
+    transition: all 2s;
 
+  }
 .spin {
     transform: rotate(360deg);
-    border-radius: 50%;
-    background-color: #bdadea;
+    border-radius: 75%;
+    background-image: url('images/texture.jpg') ;
 }
-

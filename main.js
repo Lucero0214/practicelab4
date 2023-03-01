@@ -49,12 +49,15 @@ function renderBoxes(e) {
     if (boxes.children.length === 0) {
         container.innerHTML = "Try Again. Please type a positive whole number";
     } else {
-        container.innerHTMl = "";
+        container.innerHTML = "";
         container.appendChild(boxes);
     }
 }
+const b1 = document.querySelector('.click');
 
-   
+b1.addEventListener('click', (e) => {
+  e.target.classList.toggle('spin');
+});
    
    
    
